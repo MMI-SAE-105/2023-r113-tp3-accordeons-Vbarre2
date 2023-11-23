@@ -1,12 +1,34 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Accordéon avec des booléens</title>
-  </head>
-  <body>
-    <h1>Accordéon avec des booléens</h1>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Accordéon avec des booléens</title>
+  <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+
+<body>
+  <h1>Accordéon avec des booléens</h1>
+
+
+  <button><a href="index.html">Accueil</a></button>
+
+
+  <div class="accordeon">
+    <section x-data="{
+        isOpen:true,
+      }">
+      <button @click="isOpen=! isOpen">bouton 1</button>
+      <p x-show="isOpen" x-transition.duration.500ms>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe ad
+        similique error odit,
+        voluptas molestias
+        porro beatae exercitationem. Repellendus nihil laborum consequatur expedita harum impedit voluptas quam ipsum
+        sit hic.</p>
+    </section>
+    
+  </div>
+</body>
+
 </html>
