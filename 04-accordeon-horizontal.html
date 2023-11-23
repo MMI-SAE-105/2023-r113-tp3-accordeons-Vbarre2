@@ -23,6 +23,26 @@
             </figcaption>
           </figure>
         </li>
+        <li>
+        <li :class="{actif:isOpen === 2,}" @click="isOpen=(isOpen === 2)?0:2">
+          <figure>
+            <img src="https://picsum.photos/100?random=2" alt="" width="102">
+            <figcaption>
+              @@ -28,7 +29,7 @@ <h3>Necessitatibus, temporibus in.</h3>
+            </figcaption>
+          </figure>
+        </li>
+        <li>
+        <li :class="{actif:isOpen === 3,} " @click="isOpen=(isOpen ===3)?0:3">
+          <figure>
+            <img src="https://picsum.photos/100?random=3" alt="" width="102">
+            <figcaption>
+              <h3>Qui, illum vel.</h3>
+              <p>Doloremque voluptatum accusamus aliquid facere expedita?</p>
+            </figcaption>
+          </figure>
+        </li>
+      </ul>
 </body>
 
 </html>
